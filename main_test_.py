@@ -31,14 +31,6 @@ while True:
             sys.exit()
         if event.type in [pygame.JOYDEVICEADDED, pygame.JOYDEVICEREMOVED]:
             joysticks = reset_joysticks()
-        
-        if event.type == pygame.JOYBUTTONDOWN:
-            if event.button == 0:
-                print(event)
-            if event.button == 6:
-                print(event)
-            if event.button == 7:
-                print(event)
 
     window.fill('white')
 

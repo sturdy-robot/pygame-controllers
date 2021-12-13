@@ -35,9 +35,6 @@ while True:
             sys.exit()
         if event.type in [pygame.JOYDEVICEADDED, pygame.JOYDEVICEREMOVED]:
             joysticks = reset_joysticks()
-            for joystick in joysticks:
-                controller = Controller.from_joystick(joystick)
-                print(controller.get_mapping())
     
     window.fill('white')
     
