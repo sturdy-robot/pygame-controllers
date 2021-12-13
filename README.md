@@ -1,6 +1,6 @@
 # Test with pygame controllers
 
-This repo demonstrates a coupe of tests with pygame joysticks.
+This repo demonstrates a couple of tests with pygame joysticks.
 
 The `main_test.py` file uses the Pygame Joystick API, the default API used by pygame. This can be a hassle to work with, because you have to map controllers manually, or create a file with a database of controllers.
 
