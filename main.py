@@ -24,7 +24,7 @@ def reset_joysticks():
     return [pygame.joystick.Joystick(i) for i in range(pygame.joystick.get_count())]
 
 
-joysticks = reset_joysticks
+joysticks = reset_joysticks()
 
 debug_messages = []
 
