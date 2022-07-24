@@ -40,8 +40,7 @@ while True:
     
     for joystick in joysticks:
         controller = Controller.from_joystick(joystick)
-        js = [joystick.get_guid()]
-        js.append(joystick.get_name())
+        js = [joystick.get_guid(), joystick.get_name()]
         for button in range(joystick.get_numbuttons()):
             btn_message = 'Button ' + str(button) + ': ' + str(controller.get_button(button))
             js.append(btn_message)
