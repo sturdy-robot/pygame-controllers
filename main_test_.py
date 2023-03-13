@@ -37,13 +37,13 @@ while True:
     for joystick in joysticks:
         js = [joystick.get_guid(), joystick.get_name()]
         for button in range(joystick.get_numbuttons()):
-            btn_message = 'Button ' + str(button) + ': ' + str(joystick.get_button(button))
+            btn_message = f'Button {str(button)}: {str(joystick.get_button(button))}'
             js.append(btn_message)
         for axis in range(joystick.get_numaxes()):
-            axis_message = 'Axis ' + str(axis) + ': ' + str(joystick.get_axis(axis))
+            axis_message = f'Axis {str(axis)}: {str(joystick.get_axis(axis))}'
             js.append(axis_message)
         for hat in range(joystick.get_numhats()):
-            hat_message = 'Hat ' + str(hat) + ': ' + str(joystick.get_hat(hat))
+            hat_message = f'Hat {str(hat)}: {str(joystick.get_hat(hat))}'
             js.append(hat_message)
 
         debug_messages.append(js)
